@@ -1,0 +1,9 @@
+# Python 3.10+ recommended for TensorFlow on Windows
+tensorflow>=2.15,<2.20
+# Fallback loader/preprocess if tf.keras is missing (broken TF install)
+keras>=3.0.0
+fastapi>=0.115.0
+uvicorn[standard]>=0.32.0
+python-multipart>=0.0.12
+pillow>=10.0.0
+numpy>=1.26.0
