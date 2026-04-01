@@ -21,7 +21,7 @@ from PIL import Image
 # (index 0 = first output, etc.). Typical binary: ["normal", "pneumonia"]
 # ---------------------------------------------------------------------------
 BASE_DIR = Path(__file__).resolve().parent
-MODEL_PATH = os.environ.get("MODEL_PATH", str(BASE_DIR / "best_model_v3.h5"))
+MODEL_PATH = os.environ.get("MODEL_PATH", str(BASE_DIR / "models/best_model_v3.h5"))
 IMG_SIZE = int(os.environ.get("IMG_SIZE", "224"))
 # Comma-separated, left-to-right = output index 0, 1, ...
 CLASS_LABELS = os.environ.get("CLASS_LABELS", "normal,pneumonia").split(",")
